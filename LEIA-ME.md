@@ -39,8 +39,8 @@ O contorno pontilhado some sozinho quando há imagem dentro.
 
 | `data-slot` | Onde aparece | Tamanho sugerido | Situação |
 |---|---|---|---|
-| `hero-retrato` | Centro do bloco escuro do topo | 1000 × 1300 | ✅ `public/bruno-retrato-vertical.jpg` |
-| `sobre-retrato` | Seção "O advogado" | 1200 × 800 | ✅ `public/bruno-escritorio-horizontal.jpg` |
+| `hero-retrato` | Centro do bloco escuro do topo | 1000 × 1300 | ✅ `assets/bruno-retrato-vertical.jpg` |
+| `sobre-retrato` | Seção "O advogado" | 1200 × 800 | ✅ `assets/bruno-escritorio-horizontal.jpg` |
 | `atuacao-01` … `atuacao-08` | Cards do carrossel | 800 × 600 | ⬜ 8 imagens, corte horizontal |
 
 **Sobre o retrato do hero:** a foto tem a mesma proporção da moldura, então o `cover` não cortaria nada e o Bruno ficaria pequeno. Por isso há um `transform: scale(1.25)` no desktop (aproxima o enquadramento) e um degradê sobre a foto, que funde a base no cartão escuro. No celular a moldura vira 4:3 e o `object-position: center 22%` mantém o rosto no quadro. Se trocar a foto, revise esses três valores em `styles.css` (seção "RETRATO DO HERO").

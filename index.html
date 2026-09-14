@@ -14,10 +14,13 @@
   Para preencher, substitua o conteúdo interno por:
       <img src="assets/img/NOME.jpg" alt="descrição real">
 
-  slot="hero-retrato"      1000x1300 px  — retrato do advogado recortado (PNG com fundo transparente, de preferência)
-  slot="sobre-retrato"      900x1100 px  — foto em contexto de trabalho
-  slot="atuacao-01..08"     800x600  px  — 8 imagens dos cards de atuação
-  slot="contato-ambiente"  1200x800  px  — fachada, recepção ou mesa de trabalho
+  slot="hero-retrato"     preenchido — assets/bruno-retrato-vertical.jpg
+  slot="sobre-retrato"    preenchido — assets/bruno-escritorio-horizontal.jpg
+  slot="atuacao-01..08"   800x600 px — 8 imagens dos cards de atuação
+
+  As fotos NÃO podem ficar numa pasta chamada "public": sem framework
+  detectado, a Vercel serve essa pasta como raiz do site e a página
+  inicial vira 404.
   ============================================================
 -->
 
@@ -120,7 +123,7 @@
 
         <div class="hero-figure">
           <div class="slot slot-portrait" data-slot="hero-retrato">
-            <img src="public/bruno-retrato-vertical.jpg"
+            <img src="assets/bruno-retrato-vertical.jpg"
                  alt="Bruno [Sobrenome], advogado trabalhista, de terno no escritório"
                  width="853" height="1280">
           </div>
@@ -230,7 +233,7 @@
       </ul>
 
       <div class="slot slot-wide" data-slot="sobre-retrato">
-        <img src="public/bruno-escritorio-horizontal.jpg"
+        <img src="assets/bruno-escritorio-horizontal.jpg"
              alt="Bruno [Sobrenome] no escritório, ajustando os óculos"
              width="1280" height="853" loading="lazy">
       </div>
