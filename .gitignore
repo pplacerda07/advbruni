@@ -1,0 +1,10 @@
+# dependências (o servidor local roda via npx, não instala nada aqui)
+node_modules/
+
+# configurações locais do Claude Code
+.claude/settings.local.json
+
+# lixo de sistema operacional / OneDrive
+.DS_Store
+Thumbs.db
+desktop.ini

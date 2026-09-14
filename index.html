@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bruno [Sobrenome] — Advocacia Trabalhista</title>
+<meta name="description" content="Atuação em Direito do Trabalho para trabalhadores e empresas. Análise técnica das circunstâncias, dos documentos e dos riscos envolvidos.">
+
+<!--
+  ============================================================
+  SLOTS DE IMAGEM  (trocar pelos arquivos reais depois)
+  ------------------------------------------------------------
+  Cada bloco pontilhado é um <div class="slot" data-slot="...">.
+  Para preencher, substitua o conteúdo interno por:
+      <img src="assets/img/NOME.jpg" alt="descrição real">
+
+  slot="hero-retrato"      1000x1300 px  — retrato do advogado recortado (PNG com fundo transparente, de preferência)
+  slot="sobre-retrato"      900x1100 px  — foto em contexto de trabalho
+  slot="atuacao-01..08"     800x600  px  — 8 imagens dos cards de atuação
+  slot="contato-ambiente"  1200x800  px  — fachada, recepção ou mesa de trabalho
+  ============================================================
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header" id="topo">
+  <div class="shell header-inner">
+    <a class="brand" href="#topo">BVC<span class="brand-dot">.</span></a>
+
+    <nav class="nav" aria-label="Navegação principal">
+      <ul class="nav-pill">
+        <li><a href="#jornada">Atuação</a></li>
+        <li><a href="#advogado">O advogado</a></li>
+        <li><a href="#areas">Áreas</a></li>
+        <li><a href="#etapas">Etapas</a></li>
+        <li><a href="#conteudos">Conteúdos</a></li>
+        <li><a href="#faq">Dúvidas</a></li>
+      </ul>
+    </nav>
+
+    <a class="btn btn-gold header-cta" href="https://wa.me/5511945837302" data-wa="">
+      Falar com o escritório
+      <span class="btn-arrow" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg>
+      </span>
+    </a>
+
+    <button class="burger" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-mobile">
+      <span></span><span></span>
+    </button>
+  </div>
+
+  <div class="mobile-menu" id="menu-mobile" hidden>
+    <a href="#jornada">Atuação</a>
+    <a href="#advogado">O advogado</a>
+    <a href="#areas">Áreas</a>
+    <a href="#etapas">Etapas</a>
+    <a href="#conteudos">Conteúdos</a>
+    <a href="#faq">Dúvidas</a>
+    <a class="mobile-cta" href="https://wa.me/5511945837302" data-wa="">Falar com o escritório</a>
+  </div>
+</header>
+
+<main id="conteudo">
+
+<!-- ===================== HERO ===================== -->
+<section class="hero-wrap">
+  <div class="shell">
+    <div class="hero">
+
+      <div class="hero-bg" aria-hidden="true">
+        <svg viewBox="0 0 400 400" class="hero-emblem">
+          <circle cx="200" cy="200" r="150"/>
+          <circle cx="200" cy="200" r="110"/>
+          <path d="M200 90v220M120 140h160"/>
+        </svg>
+      </div>
+
+      <div class="hero-grid">
+
+        <div class="hero-copy">
+          <p class="pill pill-dark">
+            <span class="dot"></span> OAB/MS [número] · Direito do Trabalho
+          </p>
+
+          <h1>
+            Direito do<br>
+            Trabalho com<br>
+            <em>análise técnica</em>
+          </h1>
+
+          <p class="hero-text">
+            Atuação consultiva e contenciosa para trabalhadores e empresas, com avaliação
+            individual das circunstâncias, dos documentos e dos riscos envolvidos.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="https://wa.me/5511945837302"
+               data-wa="Sou trabalhador e gostaria de apresentar uma questão para verificar a possibilidade de atendimento.">
+              Sou trabalhador
+              <span class="btn-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+            </a>
+            <a class="btn btn-ghost" href="https://wa.me/5511945837302"
+               data-wa="Represento uma empresa e gostaria de tratar de uma demanda trabalhista.">Represento uma empresa</a>
+          </div>
+
+          <p class="hero-note">
+            O envio de informações não constitui contratação. O atendimento está sujeito à
+            verificação de conflito de interesses e à formalização contratual.
+          </p>
+        </div>
+
+        <div class="hero-figure">
+          <div class="slot slot-portrait" data-slot="hero-retrato">
+            <img src="public/bruno-retrato-vertical.jpg"
+                 alt="Bruno [Sobrenome], advogado trabalhista, de terno no escritório"
+                 width="853" height="1280">
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Faixa de identificação: substitui os números promocionais do layout de referência -->
+      <ul class="hero-strip">
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 7v5c0 5 3.5 8 8 9 4.5-1 8-4 8-9V7z"/></svg>
+          <div><b>OAB/MS [nº]</b><span>Inscrição regular</span></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V9l8-5 8 5v11z"/><path d="M9 20v-6h6v6"/></svg>
+          <div><b>Campo Grande/MS</b><span>Comarca de atendimento</span></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18"/></svg>
+          <div><b>Presencial e on-line</b><span>Atendimento agendado</span></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M5 8h14M7 14h10"/></svg>
+          <div><b>Consultivo e contencioso</b><span>Trabalhadores e empresas</span></div>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ESCOLHA DE JORNADA ===================== -->
+<section class="section" id="jornada">
+  <div class="shell">
+    <div class="sec-head">
+      <div>
+        <p class="pill">Como o escritório orienta</p>
+        <h2 class="sec-title">Duas jornadas,<br>abordagens <em>distintas</em></h2>
+      </div>
+      <p class="sec-lead">
+        Trabalhador e empresa chegam com contextos, documentos e objetivos diferentes.
+        Por isso o atendimento começa pela identificação da sua posição na relação de trabalho.
+      </p>
+    </div>
+
+    <div class="journey">
+      <article class="journey-card" id="trabalhadores">
+        <p class="tag">Trabalhadores</p>
+        <h3>Análise da sua relação de trabalho</h3>
+        <p>
+          Questões decorrentes do contrato de trabalho, incluindo término do contrato, jornada,
+          remuneração, ambiente de trabalho, acidente ou doença ocupacional e formas de contratação.
+        </p>
+        <a class="link-arrow" href="#areas">
+          Ver atuação para trabalhadores
+          <span class="btn-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+        </a>
+      </article>
+
+      <article class="journey-card journey-card--dark" id="empresas">
+        <p class="tag tag-light">Empresas</p>
+        <h3>Apoio jurídico à decisão empresarial</h3>
+        <p>
+          Assessoria em decisões trabalhistas, revisão de práticas internas, relações sindicais,
+          investigações internas e condução de processos judiciais ou administrativos.
+        </p>
+        <a class="link-arrow link-arrow--light" href="#areas">
+          Ver atuação para empresas
+          <span class="btn-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== O ADVOGADO ===================== -->
+<section class="section" id="advogado">
+  <div class="shell about">
+    <div class="about-left">
+      <p class="pill">O advogado</p>
+      <h2 class="sec-title big">
+        Responsabilidade<br>técnica e<br>atendimento<br><em>próximo</em>
+      </h2>
+      <a class="btn btn-gold" href="https://wa.me/5511945837302" data-wa="">
+        Falar com o escritório
+        <span class="btn-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+      </a>
+    </div>
+
+    <div class="about-right">
+      <p class="about-lead">
+        Bruno [Sobrenome], inscrito na OAB/MS sob o nº [número], atua em questões de Direito
+        do Trabalho nas frentes consultiva e contenciosa.
+      </p>
+      <p>
+        A atuação é orientada pela análise individual das circunstâncias, pela comunicação clara
+        sobre os elementos examinados e pelo acompanhamento responsável de cada demanda. Antes de
+        qualquer conclusão, são avaliados os fatos, os documentos disponíveis, as normas aplicáveis,
+        os prazos e as alternativas juridicamente possíveis.
+      </p>
+
+      <ul class="about-facts">
+        <li><span>Formação</span> [Graduação — Instituição, ano]</li>
+        <li><span>Pós-graduação</span> [Curso — Instituição, ano]</li>
+        <li><span>Atuação</span> Direito do Trabalho individual e empresarial</li>
+        <li><span>Idiomas</span> [Português · outros, se aplicável]</li>
+      </ul>
+
+      <div class="slot slot-wide" data-slot="sobre-retrato">
+        <img src="public/bruno-escritorio-horizontal.jpg"
+             alt="Bruno [Sobrenome] no escritório, ajustando os óculos"
+             width="1280" height="853" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ÁREAS / CARROSSEL ===================== -->
+<section class="section section-dark" id="areas">
+  <div class="shell">
+    <div class="sec-head sec-head--dark">
+      <div>
+        <p class="pill pill-dark">Questões atendidas</p>
+        <h2 class="sec-title">Matérias de<br><em>atuação</em></h2>
+      </div>
+      <div class="sec-head-side">
+        <p class="sec-lead">
+          Cada matéria é analisada a partir dos fatos, dos documentos e das normas aplicáveis ao
+          caso concreto. A existência de direito depende dessa análise.
+        </p>
+        <div class="carousel-nav">
+          <button class="round-btn" type="button" data-carousel="prev" aria-label="Card anterior">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>
+          </button>
+          <button class="round-btn round-btn--gold" type="button" data-carousel="next" aria-label="Próximo card">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel" data-carousel="root">
+    <div class="carousel-track" data-carousel="track">
+
+      <article class="area-card">
+        <p class="tag">Rescisão</p>
+        <h3>Término do contrato e verbas rescisórias</h3>
+        <div class="slot slot-card" data-slot="atuacao-01"><div class="slot-info"><b>atuacao-01</b><span>800 × 600</span></div></div>
+        <p>Análise da modalidade de término, dos documentos de quitação, dos prazos e das parcelas devidas.</p>
+        <a class="round-btn round-btn--ghost card-go" href="https://wa.me/5511945837302" data-wa="Gostaria de tratar de um assunto de término do contrato." aria-label="Falar no WhatsApp sobre término do contrato"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+      </article>
+
+      <article class="area-card area-card--feature">
+        <p class="tag tag-light">Jornada</p>
+        <h3>Jornada, horas extras e intervalos</h3>
+        <div class="slot slot-card" data-slot="atuacao-02"><div class="slot-info"><b>atuacao-02</b><span>800 × 600</span></div></div>
+        <p>Exame dos registros de ponto, das escalas praticadas, dos intervalos e dos acordos aplicáveis.</p>
+        <a class="round-btn round-btn--gold card-go" href="https://wa.me/5511945837302" data-wa="Gostaria de tratar de um assunto de jornada." aria-label="Falar no WhatsApp sobre jornada"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+      </article>
+
+      <article class="area-card">
+        <p class="tag">Remuneração</p>
+        <h3>Remuneração, comissões e benefícios</h3>
+        <div class="slot slot-card" data-slot="atuacao-03"><div class="slot-info"><b>atuacao-03</b><span>800 × 600</span></div></div>
+        <p>Verificação da composição salarial, das parcelas variáveis, dos benefícios e dos reflexos.</p>
+        <a class="round-btn round-btn--ghost card-go" href="https://wa.me/5511945837302" data-wa="Gostaria de tratar de um assunto de remuneração." aria-label="Falar no WhatsApp sobre remuneração"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+      </article>
+
+      <article class="area-card">
+        <p class="tag">Ambiente</p>
+        <h3>Assédio, discriminação e ambiente de trabalho</h3>
+        <div class="slot slot-card" data-slot="atuacao-04"><div class="slot-info"><b>atuacao-04</b><span>800 × 600</span></div></div>
+        <p>Tema sensível, conduzido com discrição: avaliação do contexto, das comunicações e dos registros.</p>
+        <a class="round-btn round-btn--ghost card-go" href="https://wa.me/5511945837302" data-wa="Gostaria de tratar de um assunto de ambiente de trabalho." aria-label="Falar no WhatsApp sobre ambiente de trabalho"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+      </article>
+
+      <article class="area-card">
+        <p class="tag">Saúde</p>
+        <h3>Acidente e doença ocupacional</h3>
+        <div class="slot slot-card" data-slot="atuacao-05"><div class="slot-info"><b>atuacao-05</b><span>800 × 600</span></div></div>
+        <p>Análise da atividade exercida, das condições do posto de trabalho e da documentação médica.</p>
+        <a class="round-btn round-btn--ghost card-go" href="https://wa.me/5511945837302" data-wa="Gostaria de tratar de um assunto de acidente e doença ocupacional." aria-label="Falar no WhatsApp sobre acidente e doença ocupacional"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+      </article>
+
+      <article class="area-card">
+        <p class="tag">Vínculo</p>
+        <h3>Vínculo e formas de contratação</h3>
+        <div class="slot slot-card" data-slot="atuacao-06"><div class="slot-info"><b>atuacao-06</b><span>800 × 600</span></div></div>
+        <p>Exame da forma de prestação dos serviços, da subordinação, da pessoalidade e dos contratos.</p>
+        <a class="round-btn round-btn--ghost card-go" href="https://wa.me/5511945837302" data-wa="Gostaria de tratar de um assunto de vínculo." aria-label="Falar no WhatsApp sobre vínculo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+      </article>
+
+      <article class="area-card">
+        <p class="tag">Empresas</p>
+        <h3>Consultoria preventiva e apoio ao RH</h3>
+        <div class="slot slot-card" data-slot="atuacao-07"><div class="slot-info"><b>atuacao-07</b><span>800 × 600</span></div></div>
+        <p>Revisão de contratos, políticas e procedimentos internos, com elementos para decisões de gestão.</p>
+        <a class="round-btn round-btn--ghost card-go" href="https://wa.me/5511945837302" data-wa="Gostaria de tratar de um assunto de consultoria preventiva." aria-label="Falar no WhatsApp sobre consultoria preventiva"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+      </article>
+
+      <article class="area-card">
+        <p class="tag">Empresas</p>
+        <h3>Contencioso e relações sindicais</h3>
+        <div class="slot slot-card" data-slot="atuacao-08"><div class="slot-info"><b>atuacao-08</b><span>800 × 600</span></div></div>
+        <p>Condução de demandas judiciais e administrativas, negociação coletiva e apuração de denúncias.</p>
+        <a class="round-btn round-btn--ghost card-go" href="https://wa.me/5511945837302" data-wa="Gostaria de tratar de um assunto de contencioso." aria-label="Falar no WhatsApp sobre contencioso"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+      </article>
+
+    </div>
+
+    <div class="drag-cue" aria-hidden="true">
+      <svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg>
+      <span>arraste</span>
+      <svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ETAPAS ===================== -->
+<section class="section" id="etapas">
+  <div class="shell">
+    <div class="sec-head">
+      <div>
+        <p class="pill">Etapas do atendimento</p>
+        <h2 class="sec-title">O que acontece<br>depois do <em>contato</em></h2>
+      </div>
+      <p class="sec-lead">
+        Conhecer o percurso reduz a insegurança e torna o primeiro contato mais objetivo.
+        Nem todo contato resulta em contratação: a análise prévia faz parte do processo.
+      </p>
+    </div>
+
+    <ol class="steps">
+      <li>
+        <span class="step-num">01</span>
+        <h3>Contato inicial</h3>
+        <p>Coleta das informações essenciais para identificar a matéria e verificar eventual conflito de interesses.</p>
+      </li>
+      <li>
+        <span class="step-num">02</span>
+        <h3>Análise jurídica</h3>
+        <p>Avaliação dos fatos, dos documentos disponíveis, das normas aplicáveis, dos riscos e das alternativas possíveis.</p>
+      </li>
+      <li>
+        <span class="step-num">03</span>
+        <h3>Definição da atuação</h3>
+        <p>Apresentação do escopo do serviço e, havendo contratação, formalização das condições aplicáveis.</p>
+      </li>
+      <li>
+        <span class="step-num">04</span>
+        <h3>Acompanhamento</h3>
+        <p>Comunicação sobre os atos relevantes e as providências adotadas durante a condução do trabalho.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ===================== CONTEÚDOS ===================== -->
+<section class="section" id="conteudos">
+  <div class="shell">
+    <div class="sec-head">
+      <div>
+        <p class="pill">Conteúdos</p>
+        <h2 class="sec-title">Informação para<br>decisões mais <em>conscientes</em></h2>
+      </div>
+      <div class="sec-head-side">
+        <p class="sec-lead">
+          Artigos e atualizações sobre relações de trabalho, com finalidade informativa e linguagem
+          acessível. Não substituem a análise individual de cada situação.
+        </p>
+        <a class="btn btn-gold" href="#contato">
+          Ver todos os conteúdos
+          <span class="btn-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+        </a>
+      </div>
+    </div>
+
+    <div class="table">
+      <div class="table-head">
+        <span>Título</span><span>Categoria</span><span>Público</span><span>Data</span><span class="sr-only">Abrir</span>
+      </div>
+
+      <a class="table-row" href="#contato">
+        <span class="t-title">Verbas rescisórias: quais documentos costumam ser analisados</span>
+        <span class="t-cat">Desligamento</span>
+        <span class="t-pub">Trabalhador</span>
+        <span class="t-date">[MÊS/ANO]</span>
+        <span class="round-btn round-btn--ghost" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+      </a>
+
+      <a class="table-row" href="#contato">
+        <span class="t-title">Registro de jornada: pontos de atenção para os dois lados</span>
+        <span class="t-cat">Jornada</span>
+        <span class="t-pub">Ambos</span>
+        <span class="t-date">[MÊS/ANO]</span>
+        <span class="round-btn round-btn--ghost" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+      </a>
+
+      <a class="table-row" href="#contato">
+        <span class="t-title">Assédio no trabalho: diferenças conceituais e elementos de análise</span>
+        <span class="t-cat">Ambiente</span>
+        <span class="t-pub">Ambos</span>
+        <span class="t-date">[MÊS/ANO]</span>
+        <span class="round-btn round-btn--ghost" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+      </a>
+
+      <a class="table-row" href="#contato">
+        <span class="t-title">Investigação interna de denúncia: cuidados jurídicos na condução</span>
+        <span class="t-cat">Prevenção</span>
+        <span class="t-pub">Empresa</span>
+        <span class="t-date">[MÊS/ANO]</span>
+        <span class="round-btn round-btn--ghost" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section class="section" id="faq">
+  <div class="shell">
+    <div class="sec-head">
+      <div>
+        <p class="pill">Dúvidas sobre o atendimento</p>
+        <h2 class="sec-title">Como funciona<br>na <em>prática</em></h2>
+      </div>
+      <p class="sec-lead">
+        As respostas abaixo tratam do relacionamento com o escritório. Questões jurídicas
+        específicas dependem da análise dos fatos e dos documentos de cada situação.
+      </p>
+    </div>
+
+    <div class="faq">
+      <details>
+        <summary>Como solicitar contato do escritório?</summary>
+        <p>Pelo formulário desta página, por telefone ou pelo canal de mensagens indicado no rodapé. O retorno é feito dentro do horário de atendimento informado.</p>
+      </details>
+      <details>
+        <summary>Quais informações são necessárias no primeiro contato?</summary>
+        <p>Nome, um canal de retorno, cidade, o assunto principal e um resumo breve da situação. Também é necessário indicar a outra parte envolvida, para a verificação de conflito de interesses.</p>
+      </details>
+      <details>
+        <summary>O envio do formulário já significa que o caso foi aceito?</summary>
+        <p>Não. O envio de informações não cria relação advogado-cliente. O atendimento depende da verificação da matéria, da disponibilidade e da inexistência de conflito de interesses, além da formalização contratual.</p>
+      </details>
+      <details>
+        <summary>O atendimento pode ser realizado on-line?</summary>
+        <p>Sim, mediante agendamento, quando a natureza da demanda permitir. Reuniões presenciais também podem ser marcadas em Campo Grande/MS.</p>
+      </details>
+      <details>
+        <summary>Como funciona a verificação de conflito de interesses?</summary>
+        <p>Antes de qualquer análise, verifica-se se o escritório já atua ou atuou para a parte contrária ou em demanda relacionada. Havendo conflito, o atendimento não é iniciado.</p>
+      </details>
+      <details>
+        <summary>Quais documentos podem ser solicitados depois da triagem?</summary>
+        <p>Conforme a matéria, podem ser solicitados contrato, holerites, registros de jornada, comunicações, documentos de desligamento ou documentação médica. Esses arquivos só devem ser enviados pelo canal indicado pelo escritório.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTATO ===================== -->
+<section class="section-contact" id="contato">
+  <div class="shell">
+    <div class="contact">
+      <div class="contact-left">
+        <p class="pill pill-dark">Contato</p>
+        <h2 class="sec-title">Apresente sua<br>demanda ao <em>escritório</em></h2>
+        <p class="contact-text">
+          O atendimento começa por uma conversa no WhatsApp. Conte a situação em poucas linhas
+          e o escritório verifica a matéria, a disponibilidade e eventual conflito de interesses.
+        </p>
+
+        <ul class="contact-list">
+          <li><span>WhatsApp</span> <a href="https://wa.me/5511945837302" data-wa="">+55 11 94583-7302</a></li>
+          <li><span>Atendimento</span> Campo Grande/MS · presencial e on-line</li>
+          <li><span>Horário</span> [Segunda a sexta, 9h às 18h]</li>
+        </ul>
+      </div>
+
+      <form class="contact-form" novalidate>
+        <div class="seg" role="group" aria-label="Quem está entrando em contato">
+          <button type="button" class="seg-btn is-active" data-perfil="trabalhador">Sou trabalhador</button>
+          <button type="button" class="seg-btn" data-perfil="empresa">Represento uma empresa</button>
+        </div>
+
+        <div class="field">
+          <label for="nome">Nome</label>
+          <input id="nome" name="nome" type="text" autocomplete="name" required>
+        </div>
+
+        <div class="field">
+          <label for="assunto">Assunto principal</label>
+          <select id="assunto" name="assunto" required>
+            <option value="">Selecione</option>
+            <option>Término do contrato e verbas rescisórias</option>
+            <option>Jornada, horas extras e intervalos</option>
+            <option>Remuneração, comissões e benefícios</option>
+            <option>Assédio, discriminação e ambiente de trabalho</option>
+            <option>Acidente e doença ocupacional</option>
+            <option>Vínculo e formas de contratação</option>
+            <option>Consultoria preventiva (empresa)</option>
+            <option>Contencioso trabalhista (empresa)</option>
+            <option>Relações sindicais (empresa)</option>
+            <option>Outro assunto</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="resumo">Resumo breve <small>(até 400 caracteres)</small></label>
+          <textarea id="resumo" name="resumo" rows="3" maxlength="400" required></textarea>
+          <span class="counter" data-counter>0 / 400</span>
+        </div>
+
+        <p class="form-warning">
+          A conversa abre no WhatsApp com essas informações já escritas. Não envie documentos
+          sigilosos ou dados sensíveis antes da confirmação do canal adequado pelo escritório.
+        </p>
+
+        <button class="btn btn-gold btn-block" type="submit">
+          Abrir conversa no WhatsApp
+          <span class="btn-arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+        </button>
+
+        <p class="form-status" data-status role="status"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== RODAPÉ ===================== -->
+<footer class="site-footer">
+  <div class="shell">
+    <div class="footer-top">
+      <div>
+        <p class="brand brand-footer">BVC<span class="brand-dot">.</span></p>
+        <p class="footer-oab">Bruno [Sobrenome completo] — OAB/MS [número]</p>
+        <p class="footer-addr">Campo Grande/MS · <a href="https://wa.me/5511945837302" data-wa="">+55 11 94583-7302</a></p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Rodapé">
+        <div>
+          <p class="footer-h">Navegação</p>
+          <a href="#jornada">Atuação</a>
+          <a href="#advogado">O advogado</a>
+          <a href="#areas">Áreas</a>
+          <a href="#conteudos">Conteúdos</a>
+        </div>
+        <div>
+          <p class="footer-h">Transparência</p>
+          <a href="#">Política de privacidade</a>
+          <a href="#">Política de cookies</a>
+          <a href="#contato">Contato</a>
+        </div>
+      </nav>
+    </div>
+
+    <p class="footer-disclaimer">
+      O conteúdo deste site tem finalidade exclusivamente informativa e não constitui parecer
+      jurídico. A análise de qualquer situação depende de suas circunstâncias específicas, dos
+      documentos disponíveis e da legislação aplicável. Publicidade profissional em conformidade
+      com o Código de Ética e Disciplina e o Provimento nº 205/2021 do Conselho Federal da OAB.
+    </p>
+
+    <p class="footer-copy">© <span data-ano></span> Bruno [Sobrenome]. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<!-- ===================== WHATSAPP FLUTUANTE ===================== -->
+<div class="wa" data-wa-widget>
+  <div class="wa-card" id="wa-card" hidden>
+    <button class="wa-close" type="button" data-wa-close aria-label="Fechar">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <p class="wa-card-title">Fale com o escritório</p>
+    <p class="wa-card-text">
+      Conte a sua situação em poucas linhas. O retorno é feito dentro do horário de atendimento.
+    </p>
+    <a class="wa-card-btn" href="https://wa.me/5511945837302" data-wa="">
+      Iniciar conversa
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+    </a>
+    <p class="wa-card-note">O contato inicial não constitui contratação.</p>
+  </div>
+
+  <button class="wa-fab" type="button" data-wa-toggle aria-expanded="false" aria-controls="wa-card">
+    <svg class="wa-icon" viewBox="0 0 32 32" aria-hidden="true">
+      <path d="M16 3C8.8 3 3 8.8 3 16c0 2.3.6 4.5 1.7 6.4L3 29l6.8-1.8c1.9 1 4 1.6 6.2 1.6 7.2 0 13-5.8 13-13S23.2 3 16 3z"/>
+      <path class="wa-icon-hook" d="M11.4 9.6c-.3-.7-.6-.7-.9-.7h-.7c-.3 0-.7.1-1 .5s-1.3 1.3-1.3 3.1 1.3 3.6 1.5 3.9c.2.3 2.6 4.1 6.4 5.6 3.1 1.2 3.8 1 4.5.9.7-.1 2.2-.9 2.5-1.8s.3-1.6.2-1.8c-.1-.2-.4-.3-.8-.5s-2.2-1.1-2.6-1.2c-.3-.1-.6-.2-.8.2s-1 1.2-1.2 1.5c-.2.2-.4.3-.8.1s-1.7-.6-3.2-2c-1.2-1-2-2.3-2.2-2.7s0-.6.2-.8c.2-.2.4-.4.5-.7.2-.2.2-.4.4-.7.1-.3 0-.5 0-.7s-.8-2-1.1-2.7z"/>
+    </svg>
+    <span class="wa-label">WhatsApp</span>
+  </button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
